@@ -1,0 +1,33 @@
+
+//Q.No.1
+
+
+class Teacher { String designation = "Teacher"; String collegeName = "Beginnersbook"; void does(){  System.out.println("Teaching"); } } 
+public class PhysicsTeacher extends Teacher{ String mainSubject = "Physics"; 
+public static void main(String args[]){  PhysicsTeacher obj = new PhysicsTeacher(); 
+System.out.println(obj.collegeName);  System.out.println(obj.designation);  
+System.out.println(obj.mainSubject);  obj.does(); } }
+
+
+//Q.NO.2
+
+class Doctor { void Doctor_Details() { System.out.println("Doctor Details..."); } } class Surgeon extends Doctor { void Surgeon_Details() {
+System.out.println("Surgen Detail..."); } } public class Hospital { public static void main(String args[]) { Surgeon s = new Surgeon(); s.Doctor_Details(); s.Surgeon_Details(); } }
+
+
+// Q.NO.3
+
+class Car{ public int power; public int Serial_no; public Car(int p, int s){ power = p; Serial_no = s; } }
+class Ar1{ public static void main(String[] args){ Car[] c; c = new Car[10]; c[0] = new Car(800,111); } }
+
+
+//Q.NO.4
+
+class Student { int idNum; String name; } class College{ public static void main(String[] args) 
+{ // declaring, creating and // initializating array objects Student[] st = {new Student(), new Student()}; 
+//displaying initialized values System.out.println("Initialized values of array:");
+for(int i=0; i < st.length; i++){ System.out.print(st[i]+"\t"); } 
+//initializing Student objects st[0].idNum = 9876; st[0].name = "Rocco"; st[1].idNum = 9865; 
+st[1].name = "Jerry"; //displaying Student objects values after initialization 
+System.out.println("\n\nStudent details:"); 
+for (int i=0; i < st.length; i++) { System.out.println("Student" + (i+1) +" idNumber: "+st[i].idNum); System.out.println("Student"+(i+1)+" name: "+st[i].name); } }
